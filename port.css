@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8e7e7;
+}
+
+header {
+    background: #dc8e9e;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    position: relative;
+    transition: color 0.3s ease;
+    
+  }
+  
+  nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: white;
+    transition: width 0.3s ease;
+    -webkit-transition: width 0.3s ease;
+    
+  }
+  
+  nav a:hover {
+    color: #ffe0e0; 
+  }
+  
+  nav a:hover::after {
+    width: 100%;
+    left: 0;
+    background: #ffe0e0;
+  }
+  #navbar-right {
+    float: none;
+  }
+  .responsive-paragraph {
+    font-size: 16px; /* Base font size */
+    line-height: 1.5; /* Line height for better readability */
+    margin: 20px; /* Margin around the paragraph */
+    padding: 10px; /* Padding inside the paragraph */
+    max-width: 800px; /* Maximum width for the paragraph */
+    margin-left: auto; /* Center the paragraph */
+    margin-right: auto; /* Center the paragraph */
+}
+
+/* Responsive font size adjustments */
+@media (max-width: 1200px) {
+    .responsive-paragraph {
+        font-size: 15px; /* Slightly smaller font size */
+    }
+}
+
+@media (max-width: 992px) {
+    .responsive-paragraph {
+        font-size: 14px; /* Smaller font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .responsive-paragraph {
+        font-size: 13px; /* Even smaller font size */
+    }
+}
+
+@media (max-width: 576px) {
+    .responsive-paragraph {
+        font-size: 12px; /* Smallest font size for mobile */
+    }
+}
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #dc8e9e;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.enhanced-image {
+  width: 600px; 
+  height: auto; 
+  border: 5px solid #f8c2eb; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+  transition: transform 0.3s ease; 
+}
+
+.enhanced-image:hover {
+  transform: scale(1.05); 
+}
+.back-to-top {
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  background-color: #ec86f0;
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  padding: 10px 15px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  display: none; 
+  z-index: 1000; 
+  transition: background-color 0.3s; 
+}
+
+.back-to-top:hover {
+  background-color: #ffa8ec; 
+}
